@@ -1,0 +1,131 @@
+﻿<Window x:Class="window.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Vanzari Masini"
+        Height="600" Width="800"
+        FontFamily="Segoe UI" FontSize="13">
+
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Titlu -->
+        <TextBlock Text="Vanzati Auto"
+               FontSize="20" FontWeight="Bold"
+               HorizontalAlignment="Center"
+               Margin="0,0,0,10"/>
+
+        <!-- Taburi -->
+        <TabControl Grid.Row="1">
+            <!-- TAB CLIENȚI -->
+            <TabItem Header="Clienți">
+                <Grid Margin="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="3*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <!-- Panou input (coloana 0) -->
+                    <StackPanel Grid.Row="0" Grid.Column="0" Margin="0,0,20,0">
+                        <TextBlock Text="Nume:"/>
+                        <TextBox x:Name="txtNumeClient" Margin="0,0,0,5"/>
+
+                        <TextBlock Text="Email:"/>
+                        <TextBox x:Name="txtEmail" Margin="0,0,0,5"/>
+
+                        <TextBlock Text="Telefon:"/>
+                        <TextBox x:Name="txtTelefon" Margin="0,0,0,5"/>
+
+                        <TextBlock Text="CNP:"/>
+                        <TextBox x:Name="txtCNP" Margin="0,0,0,10"/>
+
+                        <Button Content="➕ Adaugă Client"
+                    Padding="10,5"
+                    Click="BtnAdaugaClient_Click"/>
+                    </StackPanel>
+
+                    <!-- DataGrid Clienți (coloana 1, ocupă 2 rânduri) -->
+                    <DataGrid x:Name="dgClienti"
+                    Grid.Row="0" Grid.Column="1" Grid.RowSpan="2"
+                    AutoGenerateColumns="False"
+                    CanUserAddRows="False"
+                    IsReadOnly="True"
+                    HeadersVisibility="Column"
+                    SelectionMode="Single">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="ID"      Binding="{Binding IdClient}" Width="50"/>
+                            <DataGridTextColumn Header="Nume"    Binding="{Binding nume}"      Width="*"/>
+                            <DataGridTextColumn Header="Email"   Binding="{Binding email}"     Width="*"/>
+                            <DataGridTextColumn Header="Telefon" Binding="{Binding telefon}"   Width="120"/>
+                            <DataGridTextColumn Header="CNP"     Binding="{Binding CNP}"       Width="120"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+
+            <!-- TAB MAȘINI -->
+            <TabItem Header="Mașini">
+                <Grid Margin="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="3*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <!-- Panou input Mașini -->
+                    <StackPanel Grid.Row="0" Grid.Column="0" Margin="0,0,20,0">
+                        <TextBlock Text="Model:"/>
+                        <ComboBox x:Name="cmbModel" Margin="0,0,0,5"/>
+
+                        <TextBlock Text="Tip combustibil:"/>
+                        <ComboBox x:Name="cmbCombustibil" Margin="0,0,0,5"/>
+
+                        <TextBlock Text="An fabricație:"/>
+                        <TextBox   x:Name="txtAnFabricatie" Margin="0,0,0,5"/>
+
+                        <TextBlock Text="Culoare:"/>
+                        <ComboBox x:Name="cmbCuloare" Margin="0,0,0,10"/>
+
+                        <Button Content="➕ Adaugă Mașină"
+                    Padding="10,5"
+                    Click="BtnAdaugaMasina_Click"/>
+                    </StackPanel>
+
+                    <!-- DataGrid Mașini -->
+                    <DataGrid x:Name="dgMasini"
+                    Grid.Row="0" Grid.Column="1" Grid.RowSpan="2"
+                    AutoGenerateColumns="False"
+                    CanUserAddRows="False"
+                    IsReadOnly="True"
+                    HeadersVisibility="Column"
+                    SelectionMode="Single">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="ID"            Binding="{Binding IdMasina}"       Width="50"/>
+                            <DataGridTextColumn Header="Model"         Binding="{Binding model}"          Width="*"/>
+                            <DataGridTextColumn Header="Combustibil"   Binding="{Binding combustibil}"    Width="*"/>
+                            <DataGridTextColumn Header="An fabricație" Binding="{Binding an_fabricatie}"  Width="100"/>
+                            <DataGridTextColumn Header="Culoare"       Binding="{Binding culoare}"        Width="*"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+        <!-- Zonă de mesaje la bază -->
+        <TextBlock x:Name="txtStatus"
+               Grid.Row="2"
+               FontStyle="Italic"
+               Foreground="Gray"
+               Margin="5,10,5,0"/>
+    </Grid>
+</Window>

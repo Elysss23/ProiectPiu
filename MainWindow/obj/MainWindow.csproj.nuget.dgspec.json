@@ -1,0 +1,119 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\xandr\\OneDrive\\Desktop\\ProiectPIU_InchirieriAuto-master\\MainWindow\\MainWindow.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\xandr\\OneDrive\\Desktop\\ProiectPIU_InchirieriAuto-master\\LibrarieModele\\LibrarieModele.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\xandr\\OneDrive\\Desktop\\ProiectPIU_InchirieriAuto-master\\LibrarieModele\\LibrarieModele.csproj",
+        "projectName": "LibrarieModele",
+        "projectPath": "C:\\Users\\xandr\\OneDrive\\Desktop\\ProiectPIU_InchirieriAuto-master\\LibrarieModele\\LibrarieModele.csproj",
+        "UsingMicrosoftNETSdk": false,
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "C:\\Users\\xandr\\OneDrive\\Desktop\\ProiectPIU_InchirieriAuto-master\\MainWindow\\MainWindow.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\xandr\\OneDrive\\Desktop\\ProiectPIU_InchirieriAuto-master\\MainWindow\\MainWindow.csproj",
+        "projectName": "MainWindow",
+        "projectPath": "C:\\Users\\xandr\\OneDrive\\Desktop\\ProiectPIU_InchirieriAuto-master\\MainWindow\\MainWindow.csproj",
+        "packagesPath": "C:\\Users\\xandr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\xandr\\OneDrive\\Desktop\\ProiectPIU_InchirieriAuto-master\\MainWindow\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\xandr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {
+              "C:\\Users\\xandr\\OneDrive\\Desktop\\ProiectPIU_InchirieriAuto-master\\LibrarieModele\\LibrarieModele.csproj": {
+                "projectPath": "C:\\Users\\xandr\\OneDrive\\Desktop\\ProiectPIU_InchirieriAuto-master\\LibrarieModele\\LibrarieModele.csproj"
+              },
+              "C:\\Users\\xandr\\OneDrive\\Desktop\\ProiectPIU_InchirieriAuto-master\\NivelStocareDate\\NivelStocareDate.csproj": {
+                "projectPath": "C:\\Users\\xandr\\OneDrive\\Desktop\\ProiectPIU_InchirieriAuto-master\\NivelStocareDate\\NivelStocareDate.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\xandr\\OneDrive\\Desktop\\ProiectPIU_InchirieriAuto-master\\NivelStocareDate\\NivelStocareDate.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\xandr\\OneDrive\\Desktop\\ProiectPIU_InchirieriAuto-master\\NivelStocareDate\\NivelStocareDate.csproj",
+        "projectName": "NivelStocareDate",
+        "projectPath": "C:\\Users\\xandr\\OneDrive\\Desktop\\ProiectPIU_InchirieriAuto-master\\NivelStocareDate\\NivelStocareDate.csproj",
+        "UsingMicrosoftNETSdk": false,
+        "frameworks": {
+          "net48": {
+            "projectReferences": {
+              "C:\\Users\\xandr\\OneDrive\\Desktop\\ProiectPIU_InchirieriAuto-master\\LibrarieModele\\LibrarieModele.csproj": {
+                "projectPath": "C:\\Users\\xandr\\OneDrive\\Desktop\\ProiectPIU_InchirieriAuto-master\\LibrarieModele\\LibrarieModele.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    }
+  }
+}

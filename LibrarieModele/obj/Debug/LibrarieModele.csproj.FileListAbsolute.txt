@@ -1,0 +1,6 @@
+C:\Users\xandr\OneDrive\Desktop\ProiectPIU_InchirieriAuto-master\LibrarieModele\bin\Debug\LibrarieModele.dll
+C:\Users\xandr\OneDrive\Desktop\ProiectPIU_InchirieriAuto-master\LibrarieModele\bin\Debug\LibrarieModele.pdb
+C:\Users\xandr\OneDrive\Desktop\ProiectPIU_InchirieriAuto-master\LibrarieModele\obj\Debug\LibrarieModele.csproj.AssemblyReference.cache
+C:\Users\xandr\OneDrive\Desktop\ProiectPIU_InchirieriAuto-master\LibrarieModele\obj\Debug\LibrarieModele.csproj.CoreCompileInputs.cache
+C:\Users\xandr\OneDrive\Desktop\ProiectPIU_InchirieriAuto-master\LibrarieModele\obj\Debug\LibrarieModele.dll
+C:\Users\xandr\OneDrive\Desktop\ProiectPIU_InchirieriAuto-master\LibrarieModele\obj\Debug\LibrarieModele.pdb
